@@ -1,0 +1,17 @@
+M Y & UNION HK LTD — STATIC WEBSITE
+
+1. Open index.html to view the site.
+2. Open PHOTO-GUIDE.html to identify every image.
+3. Replace files using the same name, extension, folder and proportions.
+4. Upload index.html, the CSS/JS files and assets/ to your hosting.
+
+Folders
+branding — company logo
+homepage-moving-items — transparent animated accessories
+production-floor/gallery — website preview photos
+production-floor/full-size — enlarged original photos
+certifications — certificate summary images
+catalogues — covers and PDFs
+contact — WeChat QR and map
+
+Fonts load from Google Fonts when online. Email enquiries open the visitor’s email application. No build tools needed.
