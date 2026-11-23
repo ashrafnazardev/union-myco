@@ -6,7 +6,7 @@ header{background:#fbf8f0f5;backdrop-filter:blur(15px)}
 .nav{height:76px}.nav .btn,.contact .btn{border-radius:100px;padding-inline:23px}
 .brand small{letter-spacing:2.5px}
 nav a:hover,.footlinks a:hover{color:#9c703a}
-.hero{background:#112529 url('assets/other/trim-film-poster.jpg') center 48% / cover no-repeat;isolation:isolate}
+.hero{background:#112529 url('assets/trim-film-poster.jpg') center 48% / cover no-repeat;isolation:isolate}
 .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#08181beb 0%,#0b1c1ede 26%,#0d202383 55%,#0c1b1b12 85%);z-index:-1}
 .hero-grid{display:flex;min-height:clamp(570px,73vh,820px);padding:76px 0;align-items:center}
 .hero-grid>div:first-child{max-width:680px}
@@ -275,3 +275,55 @@ dialog{border-radius:8px}dialog .btn{border-radius:100px}
 @media (max-width: 600px) { .catalogue-card { grid-template-columns: 1fr; } }
 @media (min-width:601px) and (max-width:1150px) { .nav > .btn { display: none; } nav { gap: 10px; } }
 .contact-links .linkedin-contact { background: #0a5388; border-color: #0a5388; margin-left: 6px; } .contact-links .linkedin-contact:hover { background: #073d66; }
+.skip-link { position:fixed; top:8px; left:8px; z-index:100; transform:translateY(-160%); background:#fff; color:#142e38; padding:12px 18px; }
+.skip-link:focus { transform:none; }
+img { max-width:100%; }
+a,button { touch-action:manipulation; }
+nav a,.menu,.floor-dialog button,.map-locations a { min-height:44px; }
+nav a { display:flex; align-items:center; }
+input,textarea,select { font-size:16px; }
+.contact-links a { overflow-wrap:anywhere; }
+@media(max-width:1000px) {
+  .nav { height:76px; }
+  .nav>.btn { display:none; }
+  .menu { display:block; min-width:44px; }
+  #nav { display:none; position:absolute; top:76px; left:0; right:0; padding:16px 6%; flex-direction:column; gap:2px; max-height:calc(100dvh - 76px); overflow-y:auto; background:var(--paper); border-bottom:1px solid #cdd5cd; }
+  #nav.open { display:flex; }
+}
+@media(min-width:601px) and (max-width:850px) {
+  .hero-grid { padding-top:180px; }
+  .trim-stage { top:15px; bottom:auto; height:150px; right:0; width:100%; }
+}
+@media(max-width:600px) {
+  .hero h1 { font-size:clamp(38px,10vw,60px); overflow-wrap:normal; }
+  .hero-grid>div:first-of-type { min-width:0; }
+  .form { grid-template-columns:1fr; }
+  .form label { grid-column:1/-1; }
+  .floor-controls { grid-template-columns:1fr 1fr; }
+  .floor-controls p { grid-column:1/-1; grid-row:1; }
+  .contact-links .linkedin-contact { margin-left:0; }
+  .contact-map { margin-top:35px; }
+  .map-pin { min-width:24px; min-height:24px; }
+  .pin-label { white-space:normal; min-width:100px; text-align:center; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+.factory-tabs { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 24px; }
+.factory-tabs button { background:transparent; color:#f5ecda; border:1px solid #7e9696; padding:13px 18px; border-radius:100px; min-height:44px; font-size:14px; }
+.factory-tabs button[aria-selected="true"] { background:#f0d6ab; color:#142e38; border-color:#f0d6ab; }
+.factory-panel[hidden] { display:none !important; }
+.factory-pending { border:1px solid #5f7a7c; border-radius:8px; padding:clamp(30px,6vw,70px); text-align:center; }
+.factory-pending h3 { margin:0; font-size:24px; }
+.factory-pending p { color:#d0ddda; }
+
+/* Sri Lanka photos retain their complete composition and original branding. */
+#factory-sri-lanka h3 { font-size:1.5rem; margin:0 0 12px; }
+#factory-sri-lanka .floor-featured { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); }
+#factory-sri-lanka .floor-featured .floor-photo:first-child { grid-row:auto; grid-column:auto; }
+#factory-sri-lanka .floor-photo a { display:block; position:relative; aspect-ratio:3/2; min-height:0; background:#15282e; }
+#factory-sri-lanka .floor-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+#factory-sri-lanka .floor-more { margin-top:24px; }
+#factory-sri-lanka summary { min-height:44px; padding:16px 0; cursor:pointer; }
+@media(max-width:600px) { #factory-sri-lanka .floor-featured { grid-template-columns:1fr; } }
+
+#factory-sri-lanka .floor-featured .floor-photo:first-child a { min-height:0; flex:none; }
+#factory-sri-lanka .floor-more summary { font-size:0.875rem; padding:12px 18px; }
