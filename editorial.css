@@ -328,8 +328,6 @@ input,textarea,select { font-size:16px; }
 #factory-sri-lanka .floor-featured .floor-photo:first-child a { min-height:0; flex:none; }
 #factory-sri-lanka .floor-more summary { font-size:0.875rem; padding:12px 18px; }
 
-.leadership-home-link{display:flex;width:fit-content;margin-top:24px;border-radius:100px;font-size:1rem;min-height:48px;padding:14px 22px;}
-
 /* Company logo and tagline */
 .brand-text{display:flex;flex-direction:column;gap:5px;min-width:0}.brand-lockup .brand-name{font-family:Manrope,sans-serif;font-size:11px;font-weight:700;letter-spacing:.055em}.brand-tagline{display:block;font-family:Manrope,sans-serif;font-size:10px;font-weight:500;line-height:1.35;letter-spacing:0;color:inherit;white-space:normal;max-width:225px}.nav .brand-lockup{max-width:300px}.nav{gap:16px}.nav #nav{gap:20px}.footer .brand-tagline{color:#d8e3e5}@media(max-width:1200px) and (min-width:1001px){.nav>.btn{display:none}}@media(max-width:600px){.brand-tagline{font-size:9px;max-width:190px}.brand-lockup .brand-name{font-size:10px}.brand-text{gap:4px}}
 .hero h1{font-family:'Manrope',sans-serif;font-size:clamp(42px,5.2vw,72px);font-weight:600;line-height:1.13;letter-spacing:-.045em;max-width:780px}
