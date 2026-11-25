@@ -61,3 +61,16 @@ factoryTabs.forEach((tab, index) => {
 
 const requestedFactory = factoryTabs.find(tab => "#" + tab.getAttribute("aria-controls") === location.hash);
 if (requestedFactory) selectFactory(requestedFactory);
+
+// One gallery opens beneath the compact category row; select again to close.
+const floorCategories = Array.from(document.querySelectorAll('.floor-category'));
+floorCategories.forEach(button => {
+  button.addEventListener('click', () => {
+    const open = button.getAttribute('aria-expanded') !== 'true';
+    floorCategories.forEach(item => {
+      const selected = item === button && open;
+      item.setAttribute('aria-expanded', String(selected));
+      document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+    });
+  });
+});
