@@ -327,3 +327,18 @@ input,textarea,select { font-size:16px; }
 
 #factory-sri-lanka .floor-featured .floor-photo:first-child a { min-height:0; flex:none; }
 #factory-sri-lanka .floor-more summary { font-size:0.875rem; padding:12px 18px; }
+
+.leadership-home-link{display:flex;width:fit-content;margin-top:24px;border-radius:100px;font-size:1rem;min-height:48px;padding:14px 22px;}
+
+/* Company logo and tagline */
+.brand-text{display:flex;flex-direction:column;gap:5px;min-width:0}.brand-lockup .brand-name{font-family:Manrope,sans-serif;font-size:11px;font-weight:700;letter-spacing:.055em}.brand-tagline{display:block;font-family:Manrope,sans-serif;font-size:10px;font-weight:500;line-height:1.35;letter-spacing:0;color:inherit;white-space:normal;max-width:225px}.nav .brand-lockup{max-width:300px}.nav{gap:16px}.nav #nav{gap:20px}.footer .brand-tagline{color:#d8e3e5}@media(max-width:1200px) and (min-width:1001px){.nav>.btn{display:none}}@media(max-width:600px){.brand-tagline{font-size:9px;max-width:190px}.brand-lockup .brand-name{font-size:10px}.brand-text{gap:4px}}
+.hero h1{font-family:'Manrope',sans-serif;font-size:clamp(42px,5.2vw,72px);font-weight:600;line-height:1.13;letter-spacing:-.045em;max-width:780px}
+.hero h1 em{font-family:inherit;font-style:normal;font-weight:500}
+h2{font-family:'Manrope',sans-serif;font-size:clamp(30px,3.4vw,48px);font-weight:600;line-height:1.18;letter-spacing:-.035em}
+.brand-lockup .brand-name{font-family:'DM Sans',sans-serif;font-weight:700;font-size:12px;line-height:1.15;letter-spacing:.035em}
+.brand-tagline{font-family:'DM Sans',sans-serif;font-weight:500;font-size:10px;line-height:1.25;letter-spacing:0;max-width:235px}
+.brand-text{gap:4px}
+@media(max-width:600px){.hero h1{font-size:clamp(36px,8.2vw,49px);line-height:1.14;letter-spacing:-.04em}.brand-lockup .brand-name{font-size:10px}.brand-tagline{font-size:9px;max-width:190px}h2{font-size:32px;line-height:1.2}}
+
+/* Dedicated animation column keeps moving products clear of the headline. */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:5%;padding:64px 0;align-items:center;min-height:600px}.hero-grid>div:first-of-type{max-width:none;min-width:0}.hero-grid .trim-stage{position:relative;inset:auto;width:100%;height:390px;z-index:0;min-width:0;isolation:isolate}.hero h1{font-size:clamp(38px,4.4vw,62px)}@media(max-width:850px){.hero-grid{grid-template-columns:1fr;padding:48px 0 80px;gap:28px;min-height:0}.hero-grid .trim-stage{height:240px;width:100%;inset:auto}.hero-grid>div:first-of-type{max-width:650px}.hero h1{font-size:clamp(36px,6vw,50px)}.motion-toggle{bottom:20px;right:6%}}@media(max-width:600px){.hero-grid .trim-stage{height:210px}.hero h1{font-size:clamp(34px,8vw,46px)}.hero-grid{gap:16px;padding-top:40px}}
